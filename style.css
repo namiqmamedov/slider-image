@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -34,6 +33,10 @@ body {
   border: 2px solid #343434;
 }
 
+.img-index.active {
+  border: 2px solid #343434;
+}
+
 .item img {
   width: 90px;
   height: 90px;
@@ -54,9 +57,6 @@ body {
 .slide img {
   width: 579px;
   height: 579px;
-  position: relative;
-  left: 0;
-  top: 0;
 }
 
 #nextBtn,
@@ -76,18 +76,7 @@ body {
   right: 0;
 }
 
-/* If you like this, be sure to ❤️ it. */
-.wrapper {
-  height: 100vh;
-  /* This part is important for centering the content */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* End center */
-  background: linear-gradient(to right, #834d9b, #d04ed6);
-}
-
-.wrapper a {
+.slides-container a {
   display: inline-block;
   text-decoration: none;
   padding: 15px;
@@ -98,7 +87,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.modal {
+.modal-main {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -106,6 +95,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 11111111111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,7 +103,7 @@ body {
   transition: all 0.4s;
 }
 
-.modal:target {
+.modal-main:target {
   visibility: visible;
   opacity: 1;
 }
@@ -124,10 +114,23 @@ body {
   width: 86%;
   background: #fff;
   padding: 1em 2em;
-  height: 654px;
+  height: 773px;
+  overflow: hidden;
+}
+.modal__content .slick-prev {
+  left: -36px;
+}
+.modal__content .slick-prev::before {
+  color: black;
+  font-size: 30px;
+}
+.modal__content .slick-next::before {
+  font-size: 30px;
+  color: black;
 }
 .modal__content .main-image img {
-  width: 30%;
+  width: 588px !important;
+  height: 450px;
 }
 
 .img-index {
@@ -143,6 +146,7 @@ body {
 .main-image {
   display: flex;
   justify-content: center;
+  padding-top: 64px;
 }
 
 .bottom-image {
@@ -166,4 +170,18 @@ body {
   right: 10px;
   color: #585858;
   text-decoration: none;
+}
+
+.modal-container {
+  display: flex;
+  width: 36%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  width: 588px;
+  display: block;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
