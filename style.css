@@ -1,25 +1,24 @@
 * {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
   padding: 0;
-  display: grid;
-  place-items: center;
-  height: 100vh;
 }
 
-.row {
+.left-sidebar {
+  width: 16.6%;
+  margin-right: 22px;
+}
+
+.right-sidebar {
+  width: 84.4%;
+}
+
+.carousel-index {
   display: flex;
 }
 
-.col-2 {
-  width: 16.6%;
-}
-
-.col-10 {
-  width: 84.4%;
+.card-box {
+  padding: 80px 386px;
 }
 
 .item {
@@ -114,8 +113,9 @@ body {
   width: 86%;
   background: #fff;
   padding: 1em 2em;
-  height: 773px;
+  height: 679px;
   overflow: hidden;
+  border-radius: 17px;
 }
 .modal__content .slick-prev {
   left: -36px;
@@ -166,9 +166,10 @@ body {
 
 .modal__close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #585858;
+  top: 19px;
+  right: 44px;
+  color: black;
+  font-size: 30px;
   text-decoration: none;
 }
 
@@ -184,4 +185,52 @@ body {
   width: 588px;
   display: block;
   margin: 0 auto;
+}
+
+#modal .content__main {
+  width: 100%;
+}
+#modal .content__main img {
+  width: 100%;
+  height: 500px;
+}
+#modal #page {
+  padding-top: 30px;
+}
+#modal .slider-nav img {
+  width: 100%;
+}
+#modal .slick-list {
+  height: auto !important;
+}
+#modal .js .slider-single > div:nth-child(1n+2) {
+  display: none;
+}
+#modal .js .slider-single.slick-initialized > div:nth-child(1n+2) {
+  display: block;
+}
+#modal .main-slider {
+  background: #f0f0f0;
+  color: #3498db;
+  font-size: 2.25rem;
+  margin: 0.5rem;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}
+#modal .slider-single .main-slider {
+  line-height: 10rem;
+}
+#modal .slider-nav .slick-slide {
+  cursor: pointer;
+}
+#modal .slick-slide.is-active .main-slider {
+  color: #c00;
+  background-color: black;
+}
+
+.slick-slider,
+.slick-track {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }/*# sourceMappingURL=style.css.map */

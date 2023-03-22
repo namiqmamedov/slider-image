@@ -1,5 +1,7 @@
 
-$(document).ready(function() {
+$(document).ready(function(e)  {
+
+
     var $main = $('.content__main'),
       $mainImg = $main.find('#img_cover'),
       $bool = false,

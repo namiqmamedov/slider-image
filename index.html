@@ -14,37 +14,40 @@
 </head>
 
 <body>
-  <div class="row">
-    <div class="col-2">
-      <div class="items">
-        <div class="item active">
-          <img src="./imgs/watch-1.jpg" alt="" />
-        </div>
-        <div class="item">
-          <img src="./imgs/watch-2.jpg" alt="" />
-        </div>
-        <div class="item">
-          <img src="./imgs/watch-3.jpg" alt="" />
+
+  <div class="card-box">
+    <div class="carousel-index">
+      <div class="left-sidebar">
+        <div class="items">
+          <div class="item active">
+            <img src="./imgs/watch-1.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./imgs/watch-2.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./imgs/watch-3.jpg" alt="" />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-10">
-      <div class="carousel">
-        <button id="prevBtn"><i class="fas fa-angle-left"></i></button>
-        <button id="nextBtn"><i class="fas fa-angle-right"></i></button>
-        <a href="#modal" class="demo-modal">
-          <div class="slides-container">
-            <div class="slide">
-              <img src="./imgs/watch-1.jpg" />
+      <div class="right-sidebar">
+        <div class="carousel">
+          <button id="prevBtn"><i class="fas fa-angle-left"></i></button>
+          <button id="nextBtn"><i class="fas fa-angle-right"></i></button>
+          <a href="#modal" class="demo-modal">
+            <div class="slides-container">
+              <div class="slide">
+                <img src="./imgs/watch-1.jpg" />
+              </div>
+              <div class="slide">
+                <img src="./imgs/watch-2.jpg" />
+              </div>
+              <div class="slide">
+                <img src="./imgs/watch-3.jpg" />
+              </div>
             </div>
-            <div class="slide">
-              <img src="./imgs/watch-2.jpg" />
-            </div>
-            <div class="slide">
-              <img src="./imgs/watch-3.jpg" />
-            </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -52,7 +55,7 @@
   <div id="modal" class="modal-main">
     <div class="modal__content">
       <div class="main">
-        <div class="slider slide-show">
+        <!-- <div class="slider slide-show">
           <div class="main-image content__main">
             <img src="./imgs/watch-1.jpg" id="img_cover" />
           </div>
@@ -62,11 +65,9 @@
           <div class="main-image content__main">
             <img src="./imgs/watch-3.jpg" id="img_cover" />
           </div>
-          <button id="nextBtn"><i class="fas fa-angle-right"></i></button>
-
         </div>
         <div class="slider slider-nav">
-          <div class="img-index">
+          <div class="img-index active">
             <img src="./imgs/watch-1.jpg" />
           </div>
           <div class="img-index">
@@ -75,14 +76,60 @@
           <div class="img-index">
             <img src="./imgs/watch-3.jpg" />
           </div>
+        </div> -->
+        <div id="page">
+          <div class="row">
+            <div class="column small-11 small-centered">
+              <div class="slider slider-single">
+                <div >
+                  <div class="content__main">
+                    <img id="img_cover" src="imgs/watch-1.jpg" alt="">
+                  </div>
+                </div>
+                <div >
+                  <div class="content__main">
+                    <img id="img_cover" src="imgs/watch-2.jpg" alt="">
+                  </div>
+                </div>
+                <div >
+                  <div class="content__main">
+                    <img id="img_cover" src="imgs/watch-3.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider slider-nav">
+                <div>
+                  <div class="main-slider">
+                    <img src="/imgs/watch-1.jpg" alt="">
+                  </div>
+                </div>
+                <div>
+                  <div class="main-slider">
+                    <img src="/imgs/watch-2.jpg" alt="">
+                  </div>
+                </div>
+                <div>
+                  <div class="main-slider">
+                    <img src="/imgs/watch-3.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <a href="#" class="modal__close">&times;</a>
     </div>
   </div>
 
+
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-   integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
   </script>
   <!-- <script src="zoom.js"></script> -->
